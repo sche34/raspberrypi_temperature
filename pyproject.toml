@@ -1,0 +1,26 @@
+[project]
+name = "temp-readings"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "sche34"}
+]
+dependencies = ["vcgencmd"]
+requires-python = "~=3.11"
+
+[project.scripts]
+run = 'temp_readings.logger:main'
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/temp_readings"]
