@@ -13,7 +13,7 @@ dependencies = [
 requires-python = "~=3.11"
 
 [project.scripts]
-run = 'temp_readings.logger:main'
+logger = 'temp_readings.logger:main'
 visualize = 'temp_readings.visualize:main'
 
 [build-system]
